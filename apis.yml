@@ -1,0 +1,15 @@
+name: Web Standards
+description: Specifications and guidelines that define how web technologies should
+  work, ensuring interoperability and consistency across browsers and platforms. It
+  supports the full software development lifecycle from design through deployment
+  and maintenance.
+url: https://www.w3.org/standards/
+tags:
+- Web Development
+- Standards
+- Interoperability
+- Browser Compatibility
+created: '2025'
+modified: '2025'
+apis: []
+common: []
