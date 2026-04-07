@@ -1,15 +1,13 @@
 aid: web-standards
 name: Web Standards
-description: Specifications and guidelines that define how web technologies should
-  work, ensuring interoperability and consistency across browsers and platforms.
-  Web standards are developed by organizations like W3C, WHATWG, IETF, and ECMA International.
+description: Specifications and guidelines that define how web technologies should work, ensuring interoperability and consistency across browsers and platforms. Web standards are developed by organizations like W3C, WHATWG, IETF, and ECMA International.
 type: Index
 url: https://www.w3.org/standards/
 tags:
-  - Web Development
-  - Standards
-  - Interoperability
   - Browser Compatibility
+  - Interoperability
+  - Standards
+  - Web Development
 created: '2025'
 modified: '2026-03-16'
 specificationVersion: '0.19'
