@@ -1,0 +1,380 @@
+vocabulary: "1.0.0"
+
+info:
+  provider: "Web Standards"
+  description: >-
+    Unified vocabulary for the web standards landscape, mapping core concepts,
+    specification types, standards bodies, browser APIs, and the relationships
+    between specifications and their implementations.
+  created: "2026-05-03"
+  modified: "2026-05-03"
+
+operational:
+  apis:
+    - name: WHATWG HTML Living Standard
+      namespace: whatwg-html
+      version: "living"
+      baseUrl: https://html.spec.whatwg.org/
+      status: active
+      standardsBody: WHATWG
+    - name: WHATWG Fetch Living Standard
+      namespace: whatwg-fetch
+      version: "living"
+      baseUrl: https://fetch.spec.whatwg.org/
+      status: active
+      standardsBody: WHATWG
+    - name: WHATWG DOM Living Standard
+      namespace: whatwg-dom
+      version: "living"
+      baseUrl: https://dom.spec.whatwg.org/
+      status: active
+      standardsBody: WHATWG
+    - name: WHATWG URL Living Standard
+      namespace: whatwg-url
+      version: "living"
+      baseUrl: https://url.spec.whatwg.org/
+      status: active
+      standardsBody: WHATWG
+    - name: WHATWG Streams Living Standard
+      namespace: whatwg-streams
+      version: "living"
+      baseUrl: https://streams.spec.whatwg.org/
+      status: active
+      standardsBody: WHATWG
+    - name: WHATWG WebSockets Living Standard
+      namespace: whatwg-websockets
+      version: "living"
+      baseUrl: https://websockets.spec.whatwg.org/
+      status: active
+      standardsBody: WHATWG
+    - name: W3C CSS Specifications
+      namespace: w3c-css
+      version: "various"
+      baseUrl: https://www.w3.org/Style/CSS/
+      status: active
+      standardsBody: W3C
+    - name: W3C WebAuthn
+      namespace: w3c-webauthn
+      version: "3"
+      baseUrl: https://www.w3.org/TR/webauthn/
+      status: active
+      standardsBody: W3C
+    - name: W3C WebRTC
+      namespace: w3c-webrtc
+      version: "1.0"
+      baseUrl: https://www.w3.org/TR/webrtc/
+      status: active
+      standardsBody: W3C
+    - name: W3C WebGPU
+      namespace: w3c-webgpu
+      version: "1"
+      baseUrl: https://www.w3.org/TR/webgpu/
+      status: active
+      standardsBody: W3C
+    - name: W3C Web Components
+      namespace: w3c-web-components
+      version: "1"
+      baseUrl: https://www.w3.org/standards/techs/components
+      status: active
+      standardsBody: W3C
+    - name: W3C Service Workers
+      namespace: w3c-service-workers
+      version: "1"
+      baseUrl: https://www.w3.org/TR/service-workers/
+      status: active
+      standardsBody: W3C
+    - name: W3C Payment Request API
+      namespace: w3c-payment-request
+      version: "1"
+      baseUrl: https://www.w3.org/TR/payment-request/
+      status: active
+      standardsBody: W3C
+    - name: W3C WebAssembly
+      namespace: w3c-webassembly
+      version: "2.0"
+      baseUrl: https://webassembly.github.io/spec/
+      status: active
+      standardsBody: W3C
+    - name: W3C JSON-LD
+      namespace: w3c-json-ld
+      version: "1.1"
+      baseUrl: https://www.w3.org/TR/json-ld11/
+      status: active
+      standardsBody: W3C
+    - name: W3C Verifiable Credentials
+      namespace: w3c-verifiable-credentials
+      version: "2.0"
+      baseUrl: https://www.w3.org/TR/vc-data-model/
+      status: active
+      standardsBody: W3C
+    - name: W3C WebNN
+      namespace: w3c-webnn
+      version: "1"
+      baseUrl: https://www.w3.org/TR/webnn/
+      status: active
+      standardsBody: W3C
+    - name: W3C DIDs
+      namespace: w3c-did
+      version: "1.0"
+      baseUrl: https://www.w3.org/TR/did-core/
+      status: active
+      standardsBody: W3C
+    - name: IETF HTTP Specifications
+      namespace: ietf-http
+      version: "HTTP/3"
+      baseUrl: https://httpwg.org/specs/
+      status: active
+      standardsBody: IETF
+    - name: ECMAScript
+      namespace: ecma-javascript
+      version: "2025"
+      baseUrl: https://tc39.es/ecma262/
+      status: active
+      standardsBody: ECMA International
+
+  resources:
+    - name: Specification
+      description: A formal document defining web technology behavior
+      apis: [whatwg-html, whatwg-fetch, whatwg-dom, w3c-css, w3c-webauthn, w3c-webrtc]
+      actions: [read, validate, implement, test]
+    - name: Living Standard
+      description: A continuously updated specification maintained by WHATWG
+      apis: [whatwg-html, whatwg-fetch, whatwg-dom, whatwg-url, whatwg-streams, whatwg-websockets]
+      actions: [read, follow, implement]
+    - name: Working Group
+      description: A standards body committee developing specifications
+      apis: [w3c-css, w3c-webauthn, w3c-webrtc, w3c-webgpu]
+      actions: [join, participate, review, vote]
+    - name: Web API
+      description: A browser-implemented JavaScript interface defined by a specification
+      apis: [whatwg-fetch, whatwg-dom, w3c-webauthn, w3c-webrtc, w3c-webgpu]
+      actions: [implement, test, use, extend]
+    - name: Test Suite
+      description: Cross-browser compliance tests for specifications (web-platform-tests)
+      apis: [whatwg-html, whatwg-dom, w3c-css]
+      actions: [run, contribute, validate]
+    - name: Proposal
+      description: A TC39 or WICG proposal for a new language or browser feature
+      apis: [ecma-javascript, w3c-web-components]
+      actions: [review, champion, advance, implement]
+
+  actions:
+    - name: implement
+      description: Build a specification into a browser, runtime, or library
+      pattern: write
+      methods: []
+    - name: validate
+      description: Check conformance of an implementation against a specification
+      pattern: read
+      methods: []
+    - name: test
+      description: Run compliance tests against a specification
+      pattern: read
+      methods: []
+    - name: read
+      description: Access and read a specification document
+      pattern: read
+      methods: []
+    - name: participate
+      description: Join a working group or contribute to a standard
+      pattern: write
+      methods: []
+
+  schemas:
+    specifications:
+      - name: Specification
+        properties: [name, url, version, status, maturityLevel, standardsBody, workingGroup]
+      - name: API
+        properties: [name, interface, methods, properties, events, browserSupport]
+      - name: WorkingGroup
+        properties: [name, url, chair, specification, status]
+    implementations:
+      - name: BrowserImplementation
+        properties: [browser, version, supportLevel, flags]
+      - name: RuntimeImplementation
+        properties: [runtime, version, supportLevel]
+
+  parameters:
+    identifiers:
+      - name: specificationId
+        description: Unique identifier for a specification
+      - name: standardsBodyId
+        description: Identifier for a standards organization
+    filters:
+      - name: status
+        description: Filter by specification status (living, recommendation, draft, deprecated)
+      - name: standardsBody
+        description: Filter by standards body (W3C, WHATWG, IETF, ECMA)
+      - name: category
+        description: Filter by technology category (CSS, HTML, Networking, Security, Graphics)
+
+  enums:
+    maturityLevels:
+      - Editor's Draft
+      - Working Draft
+      - Candidate Recommendation
+      - Proposed Recommendation
+      - W3C Recommendation
+      - Living Standard
+      - Obsolete
+    standardsBodies:
+      - W3C
+      - WHATWG
+      - IETF
+      - ECMA International
+      - ISO
+      - WICG
+    categories:
+      - HTML
+      - CSS
+      - JavaScript
+      - Networking
+      - Security
+      - Graphics
+      - Media
+      - Storage
+      - Device Access
+      - Authentication
+      - Machine Learning
+      - Identity
+      - Payments
+      - Accessibility
+    browserStatus:
+      - Widely Supported
+      - Partially Supported
+      - Behind Flag
+      - Not Supported
+      - Deprecated
+
+  authentication:
+    - description: Web standards specifications are publicly accessible and require no authentication
+
+capability:
+  workflows:
+    - name: Web App Development
+      description: Build modern web applications using web platform APIs
+      apis: [whatwg-html, whatwg-fetch, w3c-service-workers, whatwg-storage]
+      personas: [web-developer, frontend-engineer]
+      domains: [HTML, JavaScript, PWA]
+    - name: Security Implementation
+      description: Implement web security standards for authentication and authorization
+      apis: [w3c-webauthn, w3c-verifiable-credentials, w3c-did, ietf-http]
+      personas: [security-engineer, identity-architect]
+      domains: [Security, Authentication, Identity]
+    - name: Real-Time Communication
+      description: Build real-time features using WebRTC and WebSockets
+      apis: [w3c-webrtc, whatwg-websockets, ietf-http]
+      personas: [web-developer, backend-engineer]
+      domains: [Networking, Real-Time]
+    - name: Graphics and Visualization
+      description: Build high-performance graphics using WebGL, WebGPU and Canvas
+      apis: [w3c-webgpu]
+      personas: [graphics-developer, game-developer]
+      domains: [Graphics, Performance]
+    - name: Machine Learning in Browser
+      description: Deploy ML models directly in the browser using WebNN
+      apis: [w3c-webnn]
+      personas: [ml-engineer, web-developer]
+      domains: [Machine Learning, AI]
+    - name: Semantic Data Publishing
+      description: Publish linked data and verifiable credentials on the web
+      apis: [w3c-json-ld, w3c-verifiable-credentials, w3c-did]
+      personas: [data-engineer, identity-architect]
+      domains: [Linked Data, Semantic Web, Identity]
+
+  personas:
+    - id: web-developer
+      name: Web Developer
+      description: Builds client-side web applications using browser APIs
+      workflows: [Web App Development, Real-Time Communication]
+    - id: frontend-engineer
+      name: Frontend Engineer
+      description: Builds complex UI applications using advanced browser APIs
+      workflows: [Web App Development, Graphics and Visualization]
+    - id: security-engineer
+      name: Security Engineer
+      description: Implements authentication and security standards
+      workflows: [Security Implementation]
+    - id: identity-architect
+      name: Identity Architect
+      description: Designs decentralized identity and credential systems
+      workflows: [Security Implementation, Semantic Data Publishing]
+    - id: ml-engineer
+      name: ML Engineer
+      description: Deploys machine learning models to the web platform
+      workflows: [Machine Learning in Browser]
+    - id: data-engineer
+      name: Data Engineer
+      description: Publishes and consumes linked data and semantic web resources
+      workflows: [Semantic Data Publishing]
+    - id: graphics-developer
+      name: Graphics Developer
+      description: Builds 3D graphics and visualization applications for the web
+      workflows: [Graphics and Visualization]
+    - id: game-developer
+      name: Game Developer
+      description: Develops browser-based games using WebGL, WebGPU, and WebAudio
+      workflows: [Graphics and Visualization]
+
+  domains:
+    - name: HTML
+      description: HyperText Markup Language and document structure
+    - name: CSS
+      description: Cascading Style Sheets for visual presentation
+    - name: JavaScript
+      description: ECMAScript and browser scripting
+    - name: Networking
+      description: HTTP, WebSockets, and network communication protocols
+    - name: Security
+      description: Authentication, encryption, and web security
+    - name: Graphics
+      description: Canvas, WebGL, WebGPU, and SVG
+    - name: Media
+      description: Audio, video, and streaming APIs
+    - name: Storage
+      description: Cookies, IndexedDB, File System, and Web Storage
+    - name: Identity
+      description: Decentralized identifiers, Verifiable Credentials, and authentication
+    - name: Machine Learning
+      description: WebNN and in-browser ML inference
+    - name: Linked Data
+      description: JSON-LD, RDF, and semantic web technologies
+    - name: PWA
+      description: Progressive Web App capabilities via Service Workers and Web Manifest
+    - name: Accessibility
+      description: WCAG, ARIA, and accessible web design
+    - name: Internationalization
+      description: Character encoding, text direction, and locale support
+
+  namespaces: []
+  binds: []
+
+crossReference:
+  - resource: Fetch API
+    operations: [fetch, Request, Response, Headers]
+    workflows: [Web App Development]
+    personas: [web-developer, frontend-engineer]
+  - resource: Service Workers
+    operations: [register, install, activate, fetch-intercept, push]
+    workflows: [Web App Development]
+    personas: [web-developer, frontend-engineer]
+  - resource: WebAuthn
+    operations: [create-credential, get-credential, verify-assertion]
+    workflows: [Security Implementation]
+    personas: [security-engineer]
+  - resource: WebRTC
+    operations: [createOffer, createAnswer, addTrack, getStats, createDataChannel]
+    workflows: [Real-Time Communication]
+    personas: [web-developer, backend-engineer]
+  - resource: WebGPU
+    operations: [createDevice, createBuffer, createShaderModule, submit]
+    workflows: [Graphics and Visualization]
+    personas: [graphics-developer, game-developer]
+  - resource: WebNN
+    operations: [createContext, createGraph, compute]
+    workflows: [Machine Learning in Browser]
+    personas: [ml-engineer]
+  - resource: JSON-LD
+    operations: [compact, expand, flatten, frame, toRDF, fromRDF]
+    workflows: [Semantic Data Publishing]
+    personas: [data-engineer, identity-architect]

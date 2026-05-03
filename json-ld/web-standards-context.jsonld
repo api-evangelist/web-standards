@@ -1,0 +1,88 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "ws": "https://webstandards.org/schema/",
+    "schema": "https://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+
+    "WebStandard": "ws:WebStandard",
+    "Specification": "ws:Specification",
+    "StandardsBody": "ws:StandardsBody",
+    "WorkingGroup": "ws:WorkingGroup",
+    "LivingStandard": "ws:LivingStandard",
+    "WebAPI": "ws:WebAPI",
+
+    "name": "schema:name",
+    "description": "schema:description",
+    "url": "schema:url",
+    "version": "schema:version",
+    "dateCreated": "schema:dateCreated",
+    "dateModified": "schema:dateModified",
+    "identifier": "dcterms:identifier",
+    "label": "skos:prefLabel",
+    "definition": "skos:definition",
+
+    "specificationUrl": {
+      "@id": "ws:specification_url",
+      "@type": "@id"
+    },
+    "repositoryUrl": {
+      "@id": "ws:repository_url",
+      "@type": "@id"
+    },
+    "standardsBodyUrl": {
+      "@id": "ws:standards_body_url",
+      "@type": "@id"
+    },
+    "status": {
+      "@id": "ws:status",
+      "@type": "xsd:string"
+    },
+    "maturityLevel": {
+      "@id": "ws:maturity_level",
+      "@type": "xsd:string"
+    },
+    "publishedYear": {
+      "@id": "ws:published_year",
+      "@type": "xsd:integer"
+    },
+    "browserSupport": {
+      "@id": "ws:browser_support",
+      "@type": "xsd:string"
+    },
+    "category": {
+      "@id": "ws:category",
+      "@type": "xsd:string"
+    },
+    "tags": {
+      "@id": "ws:tags",
+      "@container": "@set",
+      "@type": "xsd:string"
+    },
+    "relatedStandards": {
+      "@id": "ws:related_standards",
+      "@container": "@set",
+      "@type": "@id"
+    },
+    "implementations": {
+      "@id": "ws:implementations",
+      "@container": "@set",
+      "@type": "xsd:string"
+    },
+    "editors": {
+      "@id": "ws:editors",
+      "@container": "@set",
+      "@type": "xsd:string"
+    },
+    "workingGroup": {
+      "@id": "ws:working_group",
+      "@type": "xsd:string"
+    },
+    "standardsBody": {
+      "@id": "ws:standards_body",
+      "@type": "xsd:string"
+    }
+  }
+}
