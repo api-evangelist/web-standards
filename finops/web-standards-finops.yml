@@ -1,0 +1,342 @@
+specification: FinOps Framework
+specificationVersion: '1.0'
+alignedWith:
+  framework: FinOps Foundation Framework
+  frameworkUrl: https://www.finops.org/framework/
+  dataSpec: FOCUS
+  dataSpecVersion: '1.3'
+  dataSpecUrl: https://focus.finops.org/focus-specification/v1-3/
+provider: Web Standards
+providerId: web-standards
+publisherName: Web Standards
+serviceCategory: API
+created: '2026-05-04'
+modified: '2026-05-04'
+tags:
+  - Browser Compatibility
+  - CSS
+  - HTML
+  - Interoperability
+  - JavaScript
+  - Standards
+  - Web APIs
+  - Web Development
+  - FinOps
+  - Cost Management
+  - FOCUS
+description: FinOps framework definition for the Web Standards API surface. Provides a FOCUS-aligned mapping
+  for cost allocation, usage measurement, and unit-economics reporting across the provider's APIs.
+principles:
+  - name: Visibility
+    description: Make API consumption costs visible to engineering, product, and finance teams in near
+      real-time.
+  - name: Allocation
+    description: Tag every chargeable API call with the consuming team, environment, application, and
+      feature so cost can be allocated.
+  - name: Optimization
+    description: Continuously evaluate request patterns, caching, batching, and tier selection to reduce
+      cost per useful unit of work.
+  - name: Accountability
+    description: Establish budget owners and chargeback or showback flows for each consuming team.
+domains:
+  - name: Understand Usage and Cost
+    capabilities:
+      - Data Ingestion
+      - Allocation
+      - Reporting and Analytics
+      - Anomaly Management
+  - name: Quantify Business Value
+    capabilities:
+      - Planning and Estimating
+      - Forecasting
+      - Budgeting
+      - Benchmarking
+      - Unit Economics
+  - name: Optimize Usage and Cost
+    capabilities:
+      - Architecting for Cloud
+      - Rate Optimization
+      - Workload Optimization
+      - Cloud Sustainability
+      - Licensing and SaaS
+  - name: Manage the FinOps Practice
+    capabilities:
+      - FinOps Practice Operations
+      - FinOps Education and Enablement
+      - Invoicing and Chargeback
+      - Onboarding Workloads
+      - Intersecting Disciplines
+billingModel:
+  pricingCategory: Usage-Based
+  billingFrequency: Monthly
+  billingCurrency: USD
+  chargeCategories:
+    - Usage
+    - Purchase
+    - Tax
+    - Credit
+    - Adjustment
+  chargeFrequency: Recurring
+focusColumns:
+  ServiceName: Web Standards
+  ServiceCategory: Developer Tools / API
+  ProviderName: Web Standards
+  PublisherName: Web Standards
+  InvoiceIssuerName: Web Standards
+  PricingCategory: Usage-Based
+  PricingUnit: request
+  BillingCurrency: USD
+  ChargeCategory: Usage
+meters:
+  - name: api_requests
+    description: Count of billable API requests
+    unit: request
+    aggregation: sum
+    dimensions:
+      - api
+      - endpoint
+      - tier
+      - region
+      - consumer
+  - name: data_egress
+    description: Bytes returned over the network in API responses
+    unit: GB
+    aggregation: sum
+    dimensions:
+      - api
+      - region
+      - consumer
+  - name: compute_seconds
+    description: Server-side compute consumed by the request, where applicable
+    unit: second
+    aggregation: sum
+    dimensions:
+      - api
+      - endpoint
+      - tier
+apis:
+  - name: WHATWG HTML Living Standard
+    baseURL: ''
+    tags:
+      - HTML
+      - Living Standard
+      - WHATWG
+      - Web APIs
+    serviceName: WHATWG HTML Living Standard
+    serviceCategory: API
+  - name: WHATWG Fetch Living Standard
+    baseURL: ''
+    tags:
+      - Fetch API
+      - HTTP
+      - Living Standard
+      - Networking
+      - WHATWG
+    serviceName: WHATWG Fetch Living Standard
+    serviceCategory: API
+  - name: WHATWG DOM Living Standard
+    baseURL: ''
+    tags:
+      - DOM
+      - Living Standard
+      - WHATWG
+      - Web APIs
+    serviceName: WHATWG DOM Living Standard
+    serviceCategory: API
+  - name: WHATWG URL Living Standard
+    baseURL: ''
+    tags:
+      - Living Standard
+      - URL
+      - WHATWG
+    serviceName: WHATWG URL Living Standard
+    serviceCategory: API
+  - name: WHATWG Streams Living Standard
+    baseURL: ''
+    tags:
+      - Living Standard
+      - Streaming
+      - WHATWG
+      - Web APIs
+    serviceName: WHATWG Streams Living Standard
+    serviceCategory: API
+  - name: WHATWG WebSockets Living Standard
+    baseURL: ''
+    tags:
+      - Living Standard
+      - Real-Time
+      - WebSockets
+      - WHATWG
+    serviceName: WHATWG WebSockets Living Standard
+    serviceCategory: API
+  - name: WHATWG Storage Living Standard
+    baseURL: ''
+    tags:
+      - Living Standard
+      - Storage
+      - WHATWG
+      - Web APIs
+    serviceName: WHATWG Storage Living Standard
+    serviceCategory: API
+  - name: WHATWG Encoding Living Standard
+    baseURL: ''
+    tags:
+      - Character Encoding
+      - Living Standard
+      - WHATWG
+    serviceName: WHATWG Encoding Living Standard
+    serviceCategory: API
+  - name: WHATWG Notifications API Living Standard
+    baseURL: ''
+    tags:
+      - Living Standard
+      - Notifications
+      - WHATWG
+    serviceName: WHATWG Notifications API Living Standard
+    serviceCategory: API
+  - name: WHATWG File System Living Standard
+    baseURL: ''
+    tags:
+      - File System
+      - Living Standard
+      - Storage
+      - WHATWG
+    serviceName: WHATWG File System Living Standard
+    serviceCategory: API
+  - name: W3C CSS Specifications
+    baseURL: ''
+    tags:
+      - CSS
+      - Layout
+      - Styling
+      - W3C
+    serviceName: W3C CSS Specifications
+    serviceCategory: API
+  - name: W3C Web Authentication (WebAuthn)
+    baseURL: ''
+    tags:
+      - Authentication
+      - Security
+      - W3C
+      - WebAuthn
+    serviceName: W3C Web Authentication (WebAuthn)
+    serviceCategory: API
+  - name: W3C WebRTC
+    baseURL: ''
+    tags:
+      - Communication
+      - Real-Time
+      - Video
+      - W3C
+      - WebRTC
+    serviceName: W3C WebRTC
+    serviceCategory: API
+  - name: W3C WebGPU
+    baseURL: ''
+    tags:
+      - GPU
+      - Graphics
+      - W3C
+      - WebGPU
+    serviceName: W3C WebGPU
+    serviceCategory: API
+  - name: W3C Web Components
+    baseURL: ''
+    tags:
+      - Components
+      - Custom Elements
+      - Shadow DOM
+      - W3C
+      - Web Components
+    serviceName: W3C Web Components
+    serviceCategory: API
+  - name: W3C Service Workers
+    baseURL: ''
+    tags:
+      - Offline
+      - Progressive Web Apps
+      - Service Workers
+      - W3C
+    serviceName: W3C Service Workers
+    serviceCategory: API
+  - name: W3C Payment Request API
+    baseURL: ''
+    tags:
+      - Commerce
+      - Payments
+      - W3C
+    serviceName: W3C Payment Request API
+    serviceCategory: API
+  - name: W3C WebAssembly
+    baseURL: ''
+    tags:
+      - Performance
+      - W3C
+      - WebAssembly
+    serviceName: W3C WebAssembly
+    serviceCategory: API
+  - name: W3C JSON-LD
+    baseURL: ''
+    tags:
+      - JSON-LD
+      - Linked Data
+      - Semantic Web
+      - W3C
+    serviceName: W3C JSON-LD
+    serviceCategory: API
+  - name: W3C Verifiable Credentials
+    baseURL: ''
+    tags:
+      - Credentials
+      - Identity
+      - Privacy
+      - Security
+      - W3C
+    serviceName: W3C Verifiable Credentials
+    serviceCategory: API
+  - name: W3C Web Neural Network API (WebNN)
+    baseURL: ''
+    tags:
+      - Artificial Intelligence
+      - Machine Learning
+      - W3C
+      - WebNN
+    serviceName: W3C Web Neural Network API (WebNN)
+    serviceCategory: API
+  - name: W3C Decentralized Identifiers (DIDs)
+    baseURL: ''
+    tags:
+      - Decentralized Identity
+      - DID
+      - Identity
+      - W3C
+    serviceName: W3C Decentralized Identifiers (DIDs)
+    serviceCategory: API
+  - name: IETF HTTP Specifications
+    baseURL: ''
+    tags:
+      - HTTP
+      - IETF
+      - Networking
+      - Protocol
+    serviceName: IETF HTTP Specifications
+    serviceCategory: API
+  - name: ECMA JavaScript (ECMAScript)
+    baseURL: ''
+    tags:
+      - ECMAScript
+      - JavaScript
+      - Programming Language
+      - Standards
+    serviceName: ECMA JavaScript (ECMAScript)
+    serviceCategory: API
+unitEconomics:
+  - name: Cost per 1K Requests
+    metric: billed_cost / (api_requests / 1000)
+    target: TBD
+  - name: Cost per Active Consumer
+    metric: billed_cost / active_consumers
+    target: TBD
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
