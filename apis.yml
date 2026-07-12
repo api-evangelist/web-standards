@@ -457,6 +457,8 @@ apis:
         url: https://github.com/tc39
 
 common:
+  - type: DomainSecurity
+    url: security/web-standards-domain-security.yml
   - url: https://www.w3.org/
     name: World Wide Web Consortium (W3C)
     type: Website
