@@ -1,5 +1,6 @@
 aid: web-standards
 name: Web Standards
+kind: topic
 description: >-
   Specifications and guidelines that define how web technologies should work,
   ensuring interoperability and consistency across browsers and platforms. Web
