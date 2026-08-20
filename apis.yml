@@ -30,6 +30,15 @@ tags:
   - Interoperability
   - JavaScript
   - Standards
+  - Web API
+  - Web Development
+tags_raw:
+  - Browser Compatibility
+  - CSS
+  - HTML
+  - Interoperability
+  - JavaScript
+  - Standards
   - Web APIs
   - Web Development
 created: '2025'
@@ -44,6 +53,11 @@ apis:
       by WHATWG and published as a continuously updated Living Standard.
     humanURL: https://html.spec.whatwg.org/multipage/
     tags:
+      - HTML
+      - Living Standard
+      - WHATWG
+      - Web API
+    tags_raw:
       - HTML
       - Living Standard
       - WHATWG
@@ -84,6 +98,11 @@ apis:
       - DOM
       - Living Standard
       - WHATWG
+      - Web API
+    tags_raw:
+      - DOM
+      - Living Standard
+      - WHATWG
       - Web APIs
     properties:
       - type: Documentation
@@ -99,6 +118,10 @@ apis:
       APIs.
     humanURL: https://url.spec.whatwg.org/
     tags:
+      - Living Standard
+      - URLs
+      - WHATWG
+    tags_raw:
       - Living Standard
       - URL
       - WHATWG
@@ -116,6 +139,11 @@ apis:
       efficient data processing.
     humanURL: https://streams.spec.whatwg.org/
     tags:
+      - Living Standard
+      - Streaming
+      - WHATWG
+      - Web API
+    tags_raw:
       - Living Standard
       - Streaming
       - WHATWG
@@ -155,6 +183,11 @@ apis:
       - Living Standard
       - Storage
       - WHATWG
+      - Web API
+    tags_raw:
+      - Living Standard
+      - Storage
+      - WHATWG
       - Web APIs
     properties:
       - type: Documentation
@@ -188,6 +221,10 @@ apis:
     humanURL: https://notifications.spec.whatwg.org/
     tags:
       - Living Standard
+      - Notification
+      - WHATWG
+    tags_raw:
+      - Living Standard
       - Notifications
       - WHATWG
     properties:
@@ -204,6 +241,11 @@ apis:
       interfaces for reading and writing files on the user's local device.
     humanURL: https://fs.spec.whatwg.org/
     tags:
+      - Filesystem
+      - Living Standard
+      - Storage
+      - WHATWG
+    tags_raw:
       - File System
       - Living Standard
       - Storage
@@ -258,6 +300,12 @@ apis:
       Developed by the W3C WebRTC Working Group.
     humanURL: https://www.w3.org/TR/webrtc/
     tags:
+      - Communications
+      - Real-Time
+      - Video
+      - W3C
+      - WebRTC
+    tags_raw:
       - Communication
       - Real-Time
       - Video
@@ -403,6 +451,11 @@ apis:
       network operations on CPUs, GPUs, and dedicated ML accelerators.
     humanURL: https://www.w3.org/TR/webnn/
     tags:
+      - Artificial Intelligence
+      - Machine-Learning
+      - W3C
+      - WebNN
+    tags_raw:
       - Artificial Intelligence
       - Machine Learning
       - W3C
