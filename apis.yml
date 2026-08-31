@@ -41,7 +41,7 @@ tags:
   - Interoperability
   - JavaScript
   - Standards
-  - Web API
+  - Web APIs
   - Web Development
 tags_raw:
   - Browser Compatibility
@@ -67,7 +67,7 @@ apis:
       - HTML
       - Living Standard
       - WHATWG
-      - Web API
+      - Web APIs
     tags_raw:
       - HTML
       - Living Standard
@@ -109,7 +109,7 @@ apis:
       - DOM
       - Living Standard
       - WHATWG
-      - Web API
+      - Web APIs
     tags_raw:
       - DOM
       - Living Standard
@@ -130,7 +130,7 @@ apis:
     humanURL: https://url.spec.whatwg.org/
     tags:
       - Living Standard
-      - URLs
+      - URL
       - WHATWG
     tags_raw:
       - Living Standard
@@ -153,7 +153,7 @@ apis:
       - Living Standard
       - Streaming
       - WHATWG
-      - Web API
+      - Web APIs
     tags_raw:
       - Living Standard
       - Streaming
@@ -194,7 +194,7 @@ apis:
       - Living Standard
       - Storage
       - WHATWG
-      - Web API
+      - Web APIs
     tags_raw:
       - Living Standard
       - Storage
@@ -252,7 +252,7 @@ apis:
       interfaces for reading and writing files on the user's local device.
     humanURL: https://fs.spec.whatwg.org/
     tags:
-      - Filesystem
+      - File System
       - Living Standard
       - Storage
       - WHATWG
