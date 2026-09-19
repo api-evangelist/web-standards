@@ -175,6 +175,11 @@ apis:
     tags:
       - Living Standard
       - Real-Time
+      - WebSocket
+      - WHATWG
+    tags_raw:
+      - Living Standard
+      - Real-Time
       - WebSockets
       - WHATWG
     properties:
